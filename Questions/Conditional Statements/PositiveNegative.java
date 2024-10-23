@@ -9,5 +9,6 @@ public class PositiveNegative {
         int number = sc.nextInt();
         String numType = (number > 0) ? "POSITIVE" : "NEGATIVE";
         System.out.println(numType);
+        sc.close();
     }
 }
