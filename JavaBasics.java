@@ -164,9 +164,9 @@ public class JavaBasics {
         // }
 
         // !<==CALCULATOR==>
-        System.out.println("Enter the first number");
+        System.out.println("Enter the first number a: ");
         int a = sc.nextInt();
-        System.out.println("Enter the second number");
+        System.out.println("Enter the second number b: ");
         int b = sc.nextInt();
         System.out.println("Enter an operator");
         char operator = sc.next().charAt(0);
