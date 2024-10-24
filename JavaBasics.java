@@ -149,47 +149,105 @@ public class JavaBasics {
 
         // char ch = 'C';
         // switch (ch) {
-        //     case 'c':
-        //         System.out.println("Chicken chilly");
-        //         break;
-        //     case 'C':
-        //         System.out.println("Chicken Roast");
-        //         break;
-        //     case 'm':
-        //         System.out.println("Mutton Curry");
-        //         break;
+        // case 'c':
+        // System.out.println("Chicken chilly");
+        // break;
+        // case 'C':
+        // System.out.println("Chicken Roast");
+        // break;
+        // case 'm':
+        // System.out.println("Mutton Curry");
+        // break;
 
-        //     default:
-        //         System.out.println("Dreaming");
+        // default:
+        // System.out.println("Dreaming");
         // }
 
         // !<==CALCULATOR==>
-        System.out.println("Enter the first number a: ");
-        int a = sc.nextInt();
-        System.out.println("Enter the second number b: ");
-        int b = sc.nextInt();
-        System.out.println("Enter an operator");
-        char operator = sc.next().charAt(0);
+        // System.out.println("Enter the first number a: ");
+        // int a = sc.nextInt();
+        // System.out.println("Enter the second number b: ");
+        // int b = sc.nextInt();
+        // System.out.println("Enter an operator");
+        // char operator = sc.next().charAt(0);
 
-        switch (operator) {
-            case '+':
-                System.out.println(a + b);
-                break;
-            case '-':
-                System.out.println(a - b);
-                break;
-            case '*':
-                System.out.println(a * b);
-                break;
-            case '/':
-                System.out.println(a / b);
-                break;
-            case '%':
-                System.out.println(a % b);
-                break;
-            default:
-                System.out.println("Wrong operator");
+        // switch (operator) {
+        // case '+':
+        // System.out.println(a + b);
+        // break;
+        // case '-':
+        // System.out.println(a - b);
+        // break;
+        // case '*':
+        // System.out.println(a * b);
+        // break;
+        // case '/':
+        // System.out.println(a / b);
+        // break;
+        // case '%':
+        // System.out.println(a % b);
+        // break;
+        // default:
+        // System.out.println("Wrong operator");
+        // }
+
+        // . <== LOOPS ==>
+        /// while-loop
+        // int counter = 0;
+        // while (counter < 10) {
+        // System.out.println(counter + ". Hello World");
+        // counter += 1;
+        // }
+
+        // System.out.println("Printed HW 10x");
+
+        // ! 1-10
+        // int number = 1;
+        // while (number <= 10) {
+        // System.out.print(number + " ");
+        // number++;
+        // }
+
+        // ! 1-n
+        // int counter = 1;
+        // System.out.println("Enter a number");
+        // int n = sc.nextInt();
+        // while (counter <= n) {
+        // System.out.print(counter+" ");
+        // counter++;
+        // }
+
+        // ! sum of first n natural numbers
+        // System.out.println("Enter natural number");
+        // int n = sc.nextInt();
+        // int counter = 1;
+        // int sum = 0;
+        // while (counter <= n) {
+        // sum += counter;
+        // counter++;
+
+        // }
+
+        // System.out.println("Sum is: "+sum);
+
+        /// <==for loop==>
+        // for (int i = 1; i<=4; i++) {
+        // System.out.println("****");
+
+        // }
+
+        // ! <==REVERSE THE GIVEN NUMBER==>
+        System.out.println("Enter a number");
+        int number = sc.nextInt();
+        int reverse = 0;
+        while (number != 0) {
+            int lastDigit = number % 10;
+            reverse = reverse * 10 + lastDigit;
+            number /=10;
         }
+
+        System.out.println(reverse);
+         
 
         sc.close();
     }
