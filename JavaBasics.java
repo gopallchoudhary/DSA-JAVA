@@ -2,6 +2,8 @@ import java.util.*;
 
 public class JavaBasics {
     public static void main(String args[]) {
+
+        
         /*
          * Scanner sc = new Scanner(System.in);
          * String name = sc.next();
@@ -35,7 +37,6 @@ public class JavaBasics {
         // float area = pie * r * r;
         // System.out.println("The area of the cirlce is " + area);
 
-        Scanner sc = new Scanner(System.in);
         // System.out.println("Enter three numbers");
         // int a = sc.nextInt();
         // int b = sc.nextInt();
@@ -237,17 +238,36 @@ public class JavaBasics {
         // }
 
         // ! <==REVERSE THE GIVEN NUMBER==>
-        System.out.println("Enter a number");
-        int number = sc.nextInt();
-        int reverse = 0;
-        while (number != 0) {
-            int lastDigit = number % 10;
-            reverse = reverse * 10 + lastDigit;
-            number /=10;
-        }
+        // System.out.println("Enter a number");
+        // int number = sc.nextInt();
+        // int reverse = 0;
+        // while (number != 0) {
+        // int lastDigit = number % 10;
+        // reverse = reverse * 10 + lastDigit;
+        // number /=10;
+        // }
 
-        System.out.println(reverse);
-         
+        // System.out.println(reverse);
+
+        // ! <==BREAK==>
+        // for (int i = 1; i <= 5; i++) {
+        // if (i == 3) {
+        // break;
+        // }
+        // System.out.println(i);
+        // }
+
+        Scanner sc = new Scanner(System.in);
+
+        // do {
+        //     System.out.println("Enter a number");
+        //     int n = sc.nextInt();
+        //     if(n%10 == 0) {
+        //         break;
+        //     }
+        // } while (true);
+
+        // System.out.println("Out of Loop:-");
 
         sc.close();
     }
