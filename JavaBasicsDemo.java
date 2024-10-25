@@ -276,19 +276,19 @@ public class JavaBasicsDemo {
 
         //!<==DISPLAY ALL NUMBERS EXCEPT MULTIPLES OF 10==>
         Scanner sc = new Scanner(System.in);
-        do {
-            System.out.println("Enter a number");
-            int n = sc.nextInt();
-            if (n % 10 == 0 && n!=0) {
-                continue;
-            }
-            if (n==0) {
-                break;
-            }
-            System.out.println(n);
-        } while (true);
+        // do {
+        //     System.out.println("Enter a number");
+        //     int n = sc.nextInt();
+        //     if (n % 10 == 0 && n!=0) {
+        //         continue;
+        //     }
+        //     if (n==0) {
+        //         break;
+        //     }
+        //     System.out.println(n);
+        // } while (true);
 
-        System.out.println("Program terminated");
+        // System.out.println("Program terminated");
 
         sc.close();
     }
