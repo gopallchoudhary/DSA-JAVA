@@ -9,8 +9,7 @@ public class Factorial {
         int num = sc.nextInt();
         int factorial = 1;
         for(int i = 2; i<=num; i++) {
-            int mul = factorial * i;
-            factorial = mul;
+            factorial *=i;
         }
 
         System.out.println("FACTORIAL: "+factorial);
