@@ -1,9 +1,8 @@
 import java.util.*;
 
-public class JavaBasics {
+public class JavaBasicsDemo {
     public static void main(String args[]) {
 
-        
         /*
          * Scanner sc = new Scanner(System.in);
          * String name = sc.next();
@@ -257,17 +256,39 @@ public class JavaBasics {
         // System.out.println(i);
         // }
 
-        Scanner sc = new Scanner(System.in);
-
         // do {
-        //     System.out.println("Enter a number");
-        //     int n = sc.nextInt();
-        //     if(n%10 == 0) {
-        //         break;
-        //     }
+        // System.out.println("Enter a number");
+        // int n = sc.nextInt();
+        // if(n%10 == 0) {
+        // break;
+        // }
         // } while (true);
 
         // System.out.println("Out of Loop:-");
+
+        // ! Continue
+        // for(int i = 1; i<=5; i++) {
+        // if (i==3) {
+        // continue;
+        // }
+        // System.out.println(i);
+        // }
+
+        //!<==DISPLAY ALL NUMBERS EXCEPT MULTIPLES OF 10==>
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Enter a number");
+            int n = sc.nextInt();
+            if (n % 10 == 0 && n!=0) {
+                continue;
+            }
+            if (n==0) {
+                break;
+            }
+            System.out.println(n);
+        } while (true);
+
+        System.out.println("Program terminated");
 
         sc.close();
     }
