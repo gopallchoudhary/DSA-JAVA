@@ -6,6 +6,14 @@ public class JavaBasics {
         Scanner sc = new Scanner(System.in);
         
 
+        
+        
+
+        
+
+        
+
+
 
         sc.close();
     }

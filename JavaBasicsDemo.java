@@ -290,6 +290,30 @@ public class JavaBasicsDemo {
 
         // System.out.println("Program terminated");
 
+        //!<<==PRIME_NUMBER==>>
+        System.out.print("Enter a positive number: ");
+        int number = sc.nextInt();
+        boolean isPrime = true;
+        if (number<=1) {
+            System.out.println("NOT PRIME");
+        } 
+        
+        else if(number == 2) {
+            System.out.println("PRIME");
+        } else {
+            for(int i = 2; i<=Math.sqrt(number); i++) {
+                if (number%i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime == true) {
+                System.out.println("PRIME NUMBER");
+            } else {
+                System.out.println("NOT PRIME NUMBER");
+            }
+        }
+
         sc.close();
     }
 }
