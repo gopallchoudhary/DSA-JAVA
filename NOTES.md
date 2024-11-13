@@ -18,3 +18,7 @@ else if => check only if is false
 
 <==Functions==>
 1.Functions requires memory (when we write fncs it takes some memory in the form of callstack), if a function is called then it takes memory in the form of call stack and after its execution when the return statement is executed it automatically deleted from the memory
+2.During making of the function the paramter given parameter or formal parameter
+3.When we call the function then it is arguments or actual parameter
+4.Function Overloading => multiple functions with same name but differnet parameters(differentiating factor is type of parameter or no. of parameter)
+5.Function overloading doesn't depend on return type
