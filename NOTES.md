@@ -13,6 +13,8 @@
 => A=B (right se utha ke left me store ho jayega (assignment operator))
 
 <==Conditional Statements==>
-if => alwayst check 
+if => alwayst check
 else if => check only if is false
 
+<==Functions==>
+1.Functions requires memory (when we write fncs it takes some memory in the form of callstack), if a function is called then it takes memory in the form of call stack and after its execution when the return statement is executed it automatically deleted from the memory
