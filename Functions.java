@@ -41,6 +41,13 @@ public class Functions {
         return factorial;
     }
 
+    //. <==Binomial-Coefficient==> 
+    public static int binomial(int n, int r) {
+        int nmr = n-r;
+        int binomialCoefficient = factorial(n) /(factorial(r) * factorial(nmr));
+        return binomialCoefficient;
+
+    };
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // System.out.println("Enter first number:");
@@ -64,11 +71,22 @@ public class Functions {
         // System.out.println("Product of a and b is " + prod);
 
         /// Factorial
-        System.out.println("Enter a number to find the factorial");
-        int n = sc.nextInt();
-        int fact = factorial(n);
-        System.out.println("Factorial of a " + n + " is: " + fact);
+        // System.out.println("Enter a number to find the factorial");
+        // int n = sc.nextInt();
+        // int fact = factorial(n);
+        // System.out.println("Factorial of a " + n + " is: " + fact);
 
-        sc.close();
+        /// Binomial-Coefficient
+        System.out.println("Enter a number");
+        int n = sc.nextInt();
+        System.out.println("Enter a number");
+        int r = sc.nextInt();
+        int binomial = binomial(n, r);
+        System.out.println("Binomial coefficient is "+binomial);
+        System.out.println(binomial(n, r));
+        
+        
+
+                sc.close();
     }
 }
