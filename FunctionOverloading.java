@@ -20,7 +20,7 @@ public class FunctionOverloading {
         return a * b;
     }
 
-    // .<==Prime-Number==> 
+    // .<==Prime-Number==>
     public static boolean isPrime(int n) {
         // corner-cases 1 & 2
         if (n <= 1) {
@@ -37,17 +37,15 @@ public class FunctionOverloading {
         return true;
     }
 
-
-    //. <==PrimeInRange==> 
+    // . <==PrimeInRange==>
     public static void primeInRange(int n) {
-        for(int i = 1; i<=n; i++) {
-            if(isPrime(i)) {
-                System.out.println(i);
+        for (int i = 1; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
             }
         }
 
     }
-
 
     public static void main(String[] args) {
         // # Parameter
@@ -58,6 +56,6 @@ public class FunctionOverloading {
         // System.out.println(multiply(8, 4));
         // System.out.println(multiply(1.2f, 5.6f));
 
-        primeInRange(100);
+        primeInRange(20);
     }
 }
