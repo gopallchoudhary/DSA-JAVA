@@ -70,7 +70,18 @@ public class Arrays {
         
     }
 
-    
+    //.Array pairs 
+    public static void printPairs(int numbers[]) {
+        int size = numbers.length;
+        int totalPairs = size*(size-1)/2;
+        for(int i=0; i<size; i++) {
+            for(int j=i+1; j<size; j++) {
+                System.out.print("("+numbers[i]+","+numbers[j]+") ");
+            }
+            System.out.println();
+        }
+        System.out.println("Total pairs: "+totalPairs);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);     
         
@@ -122,8 +133,13 @@ public class Arrays {
         //.Reverse an Array 
         //time complexity = n
         //space complexity = 1
-        int numbers[] = {2,4,6,8,10,12,14};
-        reverse(numbers);
+        //int numbers[] = {2,4,6,8,10,12,14};
+        //reverse(numbers);
+
+        //.Pairs in an array 
+        //TC = Math.pow(n,2)
+        int numbers[] = {2,4,6,8,10};
+        printPairs(numbers);
         
         
 
