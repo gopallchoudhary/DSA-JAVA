@@ -82,6 +82,36 @@ public class Arrays {
         }
         System.out.println("Total pairs: "+totalPairs);
     }
+
+    //.subarray 
+    public static void subarray(int numbers[]) {
+        int size = numbers.length;
+        int totalSubarray = size*(size+1)/2;
+        int sumSubArray[] = new int[totalSubarray];
+        int sum = 0;
+        int index = 0;
+        for(int i=0; i<=size-1; i++) {
+            for(int j=i; j<=size-1; j++) {
+                for(int k=i; k<=j; k++) { //print
+                    System.out.print(numbers[k]+" ");
+                    sum+=numbers[k];
+                }
+                
+                System.out.println();
+                //System.out.println("Sum of subArray: "+sum);
+                //System.out.println(index);
+                sumSubArray[index] = sum;
+                //System.out.println("Inserted in array: "+sumSubArray[index]);
+                index++;
+                sum=0;
+            }
+            System.out.println();
+        }
+        System.out.println("Total subarray: "+totalSubarray);
+        System.out.println("Smallest in the sum of sub array: "+getSmallest(sumSubArray));
+        System.out.println("Largest in the sum of sub array: "+getLargest(sumSubArray));
+        
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);     
         
@@ -138,8 +168,13 @@ public class Arrays {
 
         //.Pairs in an array 
         //TC = Math.pow(n,2)
+        // int numbers[] = {2,4,6,8,10};
+        // printPairs(numbers);
+
+        //.Subarrays 
+        //continuous part of an array
         int numbers[] = {2,4,6,8,10};
-        printPairs(numbers);
+        subarray(numbers);
         
         
 
