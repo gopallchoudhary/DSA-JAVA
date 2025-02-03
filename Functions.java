@@ -48,6 +48,39 @@ public class Functions {
         return binomialCoefficient;
 
     };
+
+    //. BinaryToDecimal 
+    public static void binToDec(int binNum) {
+        int myNum = binNum;
+        int decimalNum = 0;
+        int pow = 0;
+
+        while (binNum > 0) {
+            int lastDigit = binNum % 10; 
+            decimalNum = decimalNum + (int)(lastDigit * Math.pow(2, pow)); // Math.pow take and returns double data type
+            pow++;
+            binNum /= 10;
+        }
+        System.out.println(String.format("Decimal of %d = %d", myNum, decimalNum));
+    }
+    
+    //.DecimalToBinary 
+    public static void DecimalToBinary(int decimalNum) {
+        int myNum = decimalNum;
+        int pow = 0;
+        int binaryNum = 0;
+        
+        while (decimalNum > 0) {
+            int rem = decimalNum%2;
+            binaryNum = binaryNum + (rem * (int)Math.pow(10, pow));
+            pow++;
+            decimalNum/=2;
+        }
+
+        System.out.println(String.format("The binary of %d = %d", myNum, binaryNum));
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // System.out.println("Enter first number:");
@@ -77,14 +110,18 @@ public class Functions {
         // System.out.println("Factorial of a " + n + " is: " + fact);
 
         /// Binomial-Coefficient
-        System.out.println("Enter a number");
-        int n = sc.nextInt();
-        System.out.println("Enter a number");
-        int r = sc.nextInt();
-        int binomial = binomial(n, r);
-        System.out.println("Binomial coefficient is "+binomial);
-        System.out.println(binomial(n, r));
+        // System.out.println("Enter a number");
+        // int n = sc.nextInt();
+        // System.out.println("Enter a number");
+        // int r = sc.nextInt();
+        // int binomial = binomial(n, r);
+        // System.out.println("Binomial coefficient is "+binomial);
+        // System.out.println(binomial(n, r));
         
+        //binToDec(101);
+        System.out.println("Enter a number to convert into binary");
+        int deciNum = sc.nextInt();
+        DecimalToBinary(deciNum);
         
 
                 sc.close();
