@@ -42,15 +42,15 @@ public class Pattern {
         // }
 
         /// Inverted Half Pyramid
-        // int a = 1;
-        // for (int i = 1; i <= 5; i++) {
-        // for (int j = 5; j >= i; j--) {
-        // System.out.print(a);
-        // a++;
-        // }
-        // System.out.println();
-        // a=1;
-        // }
+        int a = 1;
+        for (int i = 1; i <= 5; i++) {
+        for (int j = 5; j >= i; j--) {
+        System.out.print(a);
+        a++;
+        }
+        System.out.println();
+        a=1;
+        }
 
         /// Floyds-Triangle
         // System.out.println("Enter number of rows for floyds tringle");

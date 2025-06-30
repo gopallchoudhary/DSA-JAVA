@@ -7,9 +7,9 @@ public class BubbleSort {
         for(int turn=0; turn<n-1; turn++) {
             //int swap = 0;
             for(int j=0; j<n-1-turn; j++) {
-                if(arr[j] < arr[j+1]) {
+                if(arr[j] > arr[j+1]) {
                     //swap
-                    int temp = arr[j];
+                    int temp = arr[j]; 
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                     //swap++;

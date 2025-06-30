@@ -22,3 +22,8 @@ else if => check only if is false
 3.When we call the function then it is arguments or actual parameter
 4.Function Overloading => multiple functions with same name but differnet parameters(differentiating factor is type of parameter or no. of parameter)
 5.Function overloading doesn't depend on return type
+6.Method scope => can be used within the method or function
+7.Block scope => can only used within the block scope (ex: i,j,k in for loop)
+
+<==Array==>
+1.we pass the array to method by reference

@@ -59,3 +59,12 @@ public class SubArray {
         
     }
 }
+
+/*
+    Sub Array:- continuous part of an array, ex arr = [1,2,3,4,5,6]
+    its sub arrays are:
+    1
+    1,2
+    1,2,3,4 etc 
+    124, 145, 1346 are not sub arrays
+ */
