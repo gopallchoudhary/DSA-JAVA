@@ -1,6 +1,7 @@
 package Arrays;
-public class BinarySearch {
 
+public class BinarySearch { 
+    //pre requisite -> sorted arrays
     public static int binarysearch(int numbers[], int key) {
         int start = 0, end = numbers.length-1;
         while (start<=end) {
@@ -27,10 +28,5 @@ public class BinarySearch {
             System.out.println("Index of the key is: "+index);
 
         }
-        
-        
-
-        
-
     }
 }

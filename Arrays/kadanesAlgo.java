@@ -22,7 +22,7 @@ public class kadanesAlgo {
         System.out.println("Max sum: "+ maxSum);
     }
     public static void main(String[] args) {
-        int numbers[] = { 1, -2, 6, -1, 3 };
+        int numbers[] = { 1,2,3 };
         maxSumArray(numbers);
 
     }
