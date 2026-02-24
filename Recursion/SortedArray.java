@@ -2,18 +2,17 @@ package Recursion;
 
 public class SortedArray {
     public static boolean isSorted(int arr[], int i) {
-        if(i == arr.length-1) {
+        if(arr.length-1 == i) {
             return true;
-        } 
-        if(arr[i] > arr[i+1]) {
+        } else if(arr[i] > arr[i+1]) {
             return false;
+        } else {
+            return isSorted(arr, i+1);
         }
-
-        return isSorted(arr, i+1);
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5};
+        int arr[] = {1,3,38,5,6,9,10};
         System.out.println(isSorted(arr, 0));
     }
 }

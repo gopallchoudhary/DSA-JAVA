@@ -4,7 +4,7 @@ public class buySellStocks {
 
     public static int stocks(int sellingPrice[]) {
         int n = sellingPrice.length;
-        int buyingPrice = Integer.MAX_VALUE;
+        int buyingPrice = Integer.MAX_VALUE;    
         int maxProfit = 0;
         for(int i=0; i<n; i++) {
             //buyingPrice = Math.min(sellingPrice[i], buyingPrice);

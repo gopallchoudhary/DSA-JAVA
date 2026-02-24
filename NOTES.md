@@ -24,6 +24,13 @@ else if => check only if is false
 5.Function overloading doesn't depend on return type
 6.Method scope => can be used within the method or function
 7.Block scope => can only used within the block scope (ex: i,j,k in for loop)
+8.== -> compares addresses
+9.equals() -> compares values
+10.String in java immutable
 
 <==Array==>
 1.we pass the array to method by reference
+
+<== Conversion ==>
+1.int to String => Integer.toString(n) or String.valueOf(n)
+2.String to int => Integer.parseInt(str) 3. char array to string => new String(char)

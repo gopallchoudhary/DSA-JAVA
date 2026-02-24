@@ -39,12 +39,20 @@ public class LinkedList {
 
         if (head == null) {
             head = tail = newNode;
+            return;
         }
 
         // step 2 = tail.next = newNode
         tail.next = newNode;
         tail = newNode;
     }
+
+    //. delete first node 
+    void deleteFirstNode() {
+        head = head.next;
+    }
+
+    //. delete position
 
     // > print the ll
     public void print() {
@@ -53,7 +61,7 @@ public class LinkedList {
         }
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + "-> ");
             temp = temp.next;
         }
     }
@@ -67,6 +75,9 @@ public class LinkedList {
         ll.addLast(3);
         ll.addLast(4);
         ll.addLast(5);
+        ll.print();
+        ll.deleteFirstNode();
+        System.out.println();
         ll.print();
 
     }
